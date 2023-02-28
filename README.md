@@ -10,6 +10,12 @@ npx create-next-app --projectname
 
 This Will Setup The basic Template for Your Next App and you are good to go🚀🚀🚀🚀
 
+## Take Care of Api Handler
+
+```bash
+Route handler is not working in next 13.2.0 so You can make api folder in Pages 
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
