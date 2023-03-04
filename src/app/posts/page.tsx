@@ -11,10 +11,10 @@ async function getAllPost() {
 
 export default async function Post() {
   const posts = await getAllPost();
-  // console.log(posts);
+
   return (
     <div className={styles.main}>
-      <h1>All titles below</h1>
+      <h1>All Post titles are below</h1>
       {posts.posts.map((item: { id: string; title: string }) => (
         <Link key={item.id} href={`/posts/${item.id}`}>
           {item.title}
