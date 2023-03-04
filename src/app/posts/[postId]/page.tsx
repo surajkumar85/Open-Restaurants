@@ -25,10 +25,10 @@ export default async function Post({ params }: { params: { postId: string } }) {
   const { postId } = params;
   const post = await getPost(postId);
   return (
-    <div>
-      <p>User Id : {post.id}</p>
+    <div className={styles.main}>
+      <p className={styles.id}>User Id : {post.id}</p>
       <h2>{post.title}</h2>
-      <p>{post.body}</p>
+      <p className={styles.body}>{post.body}</p>
     </div>
   );
 }
