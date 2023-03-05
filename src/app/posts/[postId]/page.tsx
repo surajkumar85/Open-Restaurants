@@ -15,7 +15,6 @@ export async function generateStaticParams() {
 async function getPost(postId: string) {
   const data = await fetch(`https://dummyjson.com/posts/${postId}`, {
     method: "GET",
-    next: { revalidate: 60 },
   });
   if (!data.ok) throw new Error(`The requested article does not exists`);
   const post = await data.json();
